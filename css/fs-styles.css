@@ -5,3 +5,7 @@ h2 {
 .af-text {
     color: blue;
 }
+
+div + p {
+    color: pink;
+}
