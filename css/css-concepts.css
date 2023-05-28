@@ -1,0 +1,40 @@
+/* [data-id *='f'] {
+    color:red;
+} */
+
+/* .text {
+    color: green
+} */
+
+/* div ~ p {
+    color:pink
+}
+
+p::first-line {
+    content: '';
+    color: red;
+} */
+
+/* tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+} */
+
+.css-precedence {
+    color: green;
+}
+
+#text-id {
+    color: pink
+}
+
+[data-id="text-value"] {
+    color: blue;
+}
+
+*{
+    color: yellowgreen;
+}
