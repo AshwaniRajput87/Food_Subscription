@@ -1,4 +1,4 @@
-/* [data-id *='f'] {
+/* /* [data-id *='f'] {
     color:red;
 } */
 
@@ -23,18 +23,49 @@ tr:nth-child(even) {
     background-color: blue;
 } */
 
-.css-precedence {
-    color: green;
-}
 
-#text-id {
-    color: pink
+/* .css-precedence {
+    color: green;
 }
 
 [data-id="text-value"] {
     color: blue;
 }
 
-*{
-    color: yellowgreen;
+#text-id {
+    color: pink
 }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  
+/*}*/
+
+/*.parent div {
+   
+}
+ */
+
+
+:root {
+    font-size: 20px;
+}
+
+ .text-container {
+    font-size: 1em;
+ }
+
+ .text {
+    font-size: 2rem;
+ }

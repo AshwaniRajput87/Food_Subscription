@@ -1,0 +1,55 @@
+<!-- If declarations from the same origin and cascade layer conflict and one property value has the !important flag set, the important declaration is applied no matter the specificity. When conflicting declarations from the same origin and cascade layer with the !important flag are applied to the same element, the declaration with a greater specificity is applied.-->
+
+<!DOCTYPE html>
+<html>
+<title>Problem Statement</title>
+
+<head>
+    <style>
+        p { 
+
+            color: red !important;
+
+            font-size: 28px;
+
+            }
+
+            div>p { /* 002 ( wins and that's why p gets green color)*/
+
+
+            color: green;
+
+            }
+
+        /*why this gives green color */
+
+        p {
+
+        color: red !important;
+
+        font-size: 28px;
+
+        }
+
+        div>p {
+
+        color: green;
+
+        }
+
+         /* Answer: irrespective of specificity of element selector red color has been applied on p element and has !important on color property and then because of inheritance applied on next div>p then it will override the property color: green and that's why it gets red color*/
+
+
+        /*why this gives red color*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Text
+        </p>
+    </div>
+</body>
+
+</html>
