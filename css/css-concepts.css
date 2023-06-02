@@ -69,3 +69,29 @@ tr:nth-child(even) {
  .text {
     font-size: 2rem;
  }
+
+ .content-box,
+ .border-box {
+    width: 160px;
+    height: 120px;
+    padding: 20px;
+    margin: 10px;
+    border: 10px solid red;
+    background-color: yellow;
+ }
+
+ .content-box {
+    box-sizing: content-box;
+ } /* 
+ Total width: 
+ Todal-height: 
+
+*/
+
+ .border-box {
+    box-sizing: border-box;
+ } /* 
+     Total width: 
+     Todal-height: 
+ 
+ */
