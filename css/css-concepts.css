@@ -72,7 +72,7 @@ tr:nth-child(even) {
 
  .content-box,
  .border-box {
-    width: 160px;
+    width: 1000px;
     height: 120px;
     padding: 20px;
     margin: 10px;
@@ -90,8 +90,49 @@ tr:nth-child(even) {
 
  .border-box {
     box-sizing: border-box;
+    background: #f2f2f2 url('/assets/images/customer.jpg') no-repeat right;
  } /* 
      Total width: 
      Todal-height: 
  
  */
+
+ .parent {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: relative;
+ }
+
+ .child {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    width: 70%;
+    position: fixed;
+
+    top:50px;
+    left: 40px
+ }
+
+ .container {
+    border: 1px solid red;
+    width:40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+ }
+
+ .item {
+    border: 1px solid green;
+    /* padding: 5px;
+    margin: 10px; */
+ }
+
+ .item-1 {
+    order: 1;
+ }

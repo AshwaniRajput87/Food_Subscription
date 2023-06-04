@@ -1,0 +1,34 @@
+.awesome-feature {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f2f2f2;
+}
+
+.af-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.af-item {
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.af-item__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.af-item__heading,
+h2 {
+    text-align: center;
+}
+
+i {
+    color: red;
+}
+
