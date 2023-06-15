@@ -6,34 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Subscription</title>
-  <meta name="description" content="This is food subscription website where you get best and healthy food" />
-  <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+  <meta name="description" content="food subscription website" />
+  
+  <!--<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </noscript>-->
  
   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap">
 
-    <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap">
-    </noscript>-->
+  <!--<link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap">
+  </noscript>-->
   <!--
   The font-display: swap property ensures that text content is visible to users even before the custom web font has finished loading. 
   It allows the browser to display a fallback font initially and then swap it with the desired web font once it becomes available.
   -->
+
+  <!--<link rel="preload" as="image" href="/assets/images/foodiesfeed.com_pizza-ready-for-baking-min.jpg">-->
+  <!--<link rel="preload" as="image" href="/assets/images/foodiesfeed.com_pizza-ready-for-baking-min.jpg">-->
   <style>
     /*---- Critical CSS ----*/
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Kanit';
+      font-family: 'Kanit', sans-serif;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li a {
+      text-decoration: none;
     }
 
     :root {
@@ -74,7 +86,7 @@
     }
    
   </style>
-  <!--<link rel="preload" as="image" href="/assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg" media="(max-width: 400px)" />-->
+  <!--<link rel="preload" as="image" href="/assets/images/foodiesfeed.com_pizza-ready-for-baking-min.jpg" media="(max-width: 400px)" />-->
 </head>
 
 <body>
@@ -93,6 +105,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-item-link" href="#contactus">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bars"></i>
         </li>
       </ul>
     </nav>
@@ -159,25 +174,25 @@
     </section>
 
     <!-- Steps to follow section-->
-    <section id="steps">
+    <section class="steps-to-follow" id="steps">
       <h2>STEPS TO FOLLOW</h2>
       <div class="underline"></div>
-      <div>
-        <img loading="lazy" src="./assets/images/Capture.PNG" alt="" />
+      <div class="stf_image-wrapper">
+        <img loading="lazy" src="./assets/images/capture-min.png" alt="capture" width="300" height="100%"/>
       </div>
-      <div>
-        <ul>
-          <li>
+      <div class="stf-content-wrapper">
+        <ul class="stf-list-items">
+          <li class="stf-list-item">
             <span>1</span>
             <p>Choose the subscription plan that best fits your needs and sign
               up today.</p>
           </li>
-          <li>
+          <li class="stf-list-item">
             <span>2</span>
             <p>Order your delicious meal using our mobile app or website. Or
               you can even call us!</p>
           </li>
-          <li>
+          <li class="stf-list-item">
             <span>3</span>
             <p>
               Enjoy your meal after less than 20 minutes. See you the next
@@ -191,100 +206,100 @@
     <section id="reviews">
       <h2>REVIEWS</h2>
       <div class="underline"></div>
-      <div>
-        <div>
-          <img loading="lazy" src="./assets/images/customer.jpg" alt="" />
-          <h3>david smith</h3>
-          <p>
+      <div class="reviews-container">
+        <div class="reviews-content">
+          <img class="user-img" loading="lazy" src="./assets/images/customer-min.jpg" alt="" width="200" height="200"/>
+          <h3 class="user-name">david smith</h3>
+          <p class="user-comment">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure
             odio, quod nisi facilis commodi ut sunt ipsam, magnam eius repellat
             perferendis porro, iste voluptas!
           </p>
-          <div>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <div class="reviews-star-wrapper">
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
           </div>
         </div>
-        <div>
-          <img src="./assets/images/customer.jpg" alt="" />
-          <h3>david smith</h3>
-          <p>
+        <div class="reviews-content">
+          <img class="user-img" loading="lazy" src="./assets/images/customer-min.jpg" alt="" width="200" height="200"/>
+          <h3 class="user-name">david smith</h3>
+          <p class="user-comment">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure
             odio, quod nisi facilis commodi ut sunt ipsam, magnam eius repellat
             perferendis porro, iste voluptas!
           </p>
-          <div>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <div class="reviews-star-wrapper">
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
           </div>
         </div>
-        <div>
-          <img src="./assets/images/customer.jpg" alt="" />
-          <h3>david smith</h3>
-          <p>
+        <div class="reviews-content">
+          <img class="user-img" loading="lazy" src="./assets/images/customer-min.jpg" alt="" width="200" height="200"/>
+          <h3 class="user-name">david smith</h3>
+          <p class="user-comment">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure
             odio, quod nisi facilis commodi ut sunt ipsam, magnam eius repellat
             perferendis porro, iste voluptas!
           </p>
-          <div>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <div class="reviews-star-wrapper">
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
+            <i class="reviews-star fa-solid fa-star"></i>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Pricing section-->
-    <section id="price">
+    <section id="price" class="pricing-plans">
       <h2>start eating health today</h2>
       <div class="underline"></div>
-      <div>
-        <div>
-          <h3>Premium</h3>
-          <h4>$399/month</h4>
-          <p>That's only 13.30$ per meal</p>
-          <ul>
-            <li>1 meal every day</li>
-            <li>Order 24/7</li>
-            <li>Access to newest creations</li>
-            <li>Free delivery</li>
+      <div class="pp-content-wrapper">
+        <div class="pp-content-item">
+          <h3 class="pp-heading">Premium</h3>
+          <h4 class="pp-text">$399/month</h4>
+          <p class="pp-description">That's only 13.30$ per meal</p>
+          <ul class="pp-list-items">
+            <li class="pp-list-item">1 meal every day</li>
+            <li class="pp-list-item">Order 24/7</li>
+            <li class="pp-list-item">Access to newest creations</li>
+            <li class="pp-list-item">Free delivery</li>
           </ul>
-          <button>I'm hungry</button>
+          <button class="btn btn--primary">I'm hungry</button>
         </div>
 
-        <div>
-          <h3>Premium</h3>
-          <h4>$399/month</h4>
-          <p>That's only 13.30$ per meal</p>
-          <ul>
-            <li>1 meal every day</li>
-            <li>Order 24/7</li>
-            <li>Access to newest creations</li>
-            <li>Free delivery</li>
+        <div class="pp-content-item">
+          <h3 class="pp-heading">Premium</h3>
+          <h4 class="pp-text">$399/month</h4>
+          <p class="pp-description">That's only 13.30$ per meal</p>
+          <ul class="pp-list-items">
+            <li class="pp-list-item">1 meal every day</li>
+            <li class="pp-list-item">Order 24/7</li>
+            <li class="pp-list-item">Access to newest creations</li>
+            <li class="pp-list-item">Free delivery</li>
           </ul>
-          <button>I'm hungry</button>
+          <button class="btn btn--primary">I'm hungry</button>
         </div>
 
-        <div>
-          <h3>Premium</h3>
-          <h4>$399/month</h4>
-          <p>That's only 13.30$ per meal</p>
-          <ul>
-            <li>1 meal every day</li>
-            <li>Order 24/7</li>
-            <li>Access to newest creations</li>
-            <li>Free delivery</li>
+        <div class="pp-content-item">
+          <h3 class="pp-heading">Premium</h3>
+          <h4 class="pp-text">$399/month</h4>
+          <p class="pp-description">That's only 13.30$ per meal</p>
+          <ul class="pp-list-items">
+            <li class="pp-list-item">1 meal every day</li>
+            <li class="pp-list-item">Order 24/7</li>
+            <li class="pp-list-item">Access to newest creations</li>
+            <li class="pp-list-item">Free delivery</li>
           </ul>
-          <button>I'm hungry</button>
+          <button class="btn btn--primary">I'm hungry</button>
         </div>
       </div>
     </section>
@@ -294,41 +309,42 @@
       <h2>contact us</h2>
       <div class="underline"></div>
       <div class="cu-container">
-        <div class="cu-video">
-          <video width="400px" height="500px" src="./assets/videos/Avocado.mp4" autoplay muted loop></video>
+        <div class="cu-animation">
+          <!--<video width="400px" height="500px" src="./assets/videos/Avocado.mp4" autoplay muted loop></video>-->
+          <img class="cu-animation-img" src="/assets/images/avacado.gif" alt="Avacado image"/>
         </div>
         <div class="cu-form-wrapper">
-          <form action="">
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name"/>
+          <form class="cu-form" action="">
+            <div class="cu-form__name">
+              <label class="cu-form-label" for="name">Name</label>
+              <input class="cu-input-field cu-name" type="text" id="name"/>
             </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email"/>
+            <div class="cu-form__email">
+              <label class="cu-form-label" for="email">Email</label>
+              <input class="cu-input-field cu-email" type="email" id="email"/>
             </div>
 
-            <div>
-              <label for="findUs">How did you find us</label>
-              <select name="find" id="findUs">
-                <option value="">Friends</option>
-                <option value="">Search</option>
-                <option value="">Advertisement</option>
-                <option value="">Other</option>
+            <div class="cu-form__select">
+              <label class="cu-form-label" for="findUs">How did you find us</label>
+              <select class="cu-form-select" name="find" id="findUs">
+                <option class="cu-form-select__option" value="">Friends</option>
+                <option class="cu-form-select__option" value="">Search</option>
+                <option class="cu-form-select__option" value="">Advertisement</option>
+                <option class="cu-form-select__option" value="">Other</option>
               </select>
             </div>
 
             <div>
-              <label for="message">Drop us a line</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <label class="cu-form-label" for="message">Drop us a line</label>
+              <textarea class="cu-form-textarea" name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <div>
-              <input type="checkbox" id="terms-condition" />
-              <label for="terms-condition">I have read and agree with all the Privacy Policy and Terms
+              <input class="cu-form-checkbox" type="checkbox" id="terms-condition" />
+              <label class="cu-form-label" for="terms-condition">I have read and agree with all the Privacy Policy and Terms
                 Conditions</label>
             </div>
             <div>
-              <button>Send Message</button>
+              <button class="btn btn--primary">Send Message</button>
             </div>
           </form>
         </div>
@@ -336,25 +352,26 @@
     </section>
   </main>
   <!-- Page Footer-->
-  <footer>
-    <ul>
-      <li><a href="/about">About</a></li>
+  <footer class="footer">
+    <ul class="footer-items">
+      <li class="footer-item"><a href="/about">About</a></li>
 
-      <li><a href="/iOS">ios App</a></li>
+      <li class="footer-item"><a href="/iOS">ios App</a></li>
 
-      <li><a href="/android">Android App</a></li>
+      <li class="footer-item"><a href="/android">Android App</a></li>
     </ul>
 
-    <ul>
-      <li><a href="/facebookPage" title="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
-      <li><a href="/twitterPage" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-      <li><a href="/instagramPage" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    <ul class="footer-social-items">
+      <li class="fs-item"><a class="fs_link" href="/facebookPage" title="facebook"><i class="fs-icon fa-brands fa-square-facebook"></i></a></li>
+      <li class="fs-item"><a class="fs_link" href="/twitterPage" title="twitter"><i class="fs-icon fa-brands fa-twitter"></i></a></li>
+      <li class="fs-item"><a class="fs_link" href="/instagramPage" title="instagram"><i class="fs-icon fa-brands fa-instagram"></i></a></li>
     </ul>
 
-    <div>
-      <p>Copyright 2023 EVERYONE. All rights reverved.</p>
+    <div class="footer-copyright-wrapper">
+      <p class="fc-text">Copyright 2023 EVERYONE. All rights reverved.</p>
     </div>
   </footer>
+  
   <!-- Non-critical CSS -->
   <link rel="stylesheet" href="/css/fs-styles.css" />
 </body>
